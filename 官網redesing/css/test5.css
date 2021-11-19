@@ -1,0 +1,39 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background: white;
+    overflow: hidden;
+}
+
+.logo-img {
+    width: 228px;
+    height: 339px;
+    margin: 0;
+    margin-left: 50px;
+    margin-top: 70px;
+    padding: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.top-image {
+    background: url('http://www.samoi.com.tw/assets/images/mbr-1405x937.jpeg') -25px -50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    background-size: calc(100% + 50px);
+}

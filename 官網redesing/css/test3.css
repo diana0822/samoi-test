@@ -1,0 +1,62 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    /*background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #7d7d80, #2e2e2e) no-repeat 0 0;*/
+    background: white;
+    overflow: hidden;
+}
+
+.moving-zone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 120px;
+    margin: -150px 0 0 -150px;
+    z-index: 9;
+    perspective: 800px;
+}
+
+.popup {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+
+.img {
+    width: 221px;
+    height: 329px;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.popup:before {
+    content: '';
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, .1);
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, .1);
+    transform: translateZ(-100px);
+}
+
+.top-image {
+    background: url('https://raw.githubusercontent.com/diana0822/-/main/pexels-photo-5086477.jpeg') -25px -50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    background-size: calc(100% + 50px);
+}
