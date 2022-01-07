@@ -1,1 +1,0 @@
-# samoi-test
